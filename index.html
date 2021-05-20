@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <style>
+      html {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        text-transform: uppercase;
+      }
+      table tr {
+        display: flex;
+        flex-direction: row;
+      }
+
+      table td {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+      }
+
+      .marked-start {
+        transform: scale(1.2);
+      }
+
+      .kulka {
+        width: 40px;
+        height: 40px;
+        align-self: center;
+        border-radius: 100%;
+        pointer-events: none;
+      }
+
+      .disabled {
+        pointer-events: none;
+      }
+
+      .temp-path {
+        background-color: rgb(255, 146, 146);
+      }
+
+      .path {
+        background-color: rgb(188, 247, 255);
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .info-wrapper {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid rgb(228, 255, 187);
+        background-color: rgb(228, 255, 187);
+      }
+
+      #box {
+        width: 300px;
+        font-size: 24px;
+        height: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #board {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgb(228, 255, 187);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="info-wrapper">
+        <div id="timer"></div>
+        <div id="info"></div>
+        <div id="points"></div>
+        <div id="box"></div>
+      </div>
+
+      <div id="board"></div>
+    </div>
+    <script src="./dist/index.bundle.js"></script>
+  </body>
+</html>
